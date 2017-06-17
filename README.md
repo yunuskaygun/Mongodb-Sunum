@@ -88,4 +88,4 @@ db.person.remove("",0) //Tümünü Sil
 - Sharding Kavramı Nedir ?
 - C# ile mongoDB uygulaması
 
-
+[Power Point Dosyasını İndir](https://github.com/yunuskaygun/Mongodb-Sunum/raw/master/mongoDB%20Sunum.pptx)
