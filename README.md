@@ -20,6 +20,17 @@ Relational database kavramından farklı olarak artık mongoda nesne mantığın
     ]
 }
 ```
+
+Genel Komutlar
+```
+use db_adi
+show dbs        //Mevcut veritabanlarını göster
+db.dropDatabase()        //Mevcut veritabanı sil
+db.createCollection("pers")        //pers adında bir collection oluştur
+db.pers.drop()        //pers collectionu sil
+```
+
+
 Verileri Sorgulamak
 ```
 db.person.find()
@@ -33,6 +44,8 @@ db.person.find().limit(2)
 db.person.find().sort({"ad":1})
 db.person.find().sort({"ad":-1})
 ```
+
+
 Dokuman Ekleme (Insert İşlemi)
 ```
 Var kayit = [{
@@ -47,12 +60,16 @@ Var kayit = [{
     }];
 db.person.insert(kayit)
 ```
+
+
 Update ve Delete İşlemi
 ```
 db.person.update({"ad":"mahmut sarı"} ,{$set:{‘maas':5500}})
 db.person.remove({"sicil":"1234"})
 db.person.remove("",0) //Tümünü Sil
 ```
+
+
 ### Slayttaki Diğer Konular:
 - NO SQL (Not Only SQL) Nedir ?
 - NO SQL Avantajları ve Dezavantajları Nelerdir
